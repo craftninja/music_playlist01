@@ -1,1 +1,11 @@
-Welcome
+<h1>Check these sweet tunes!</h1>
+<hr>
+<form action="/" method="post">
+  <input type="text" placeholder="Title" name="title"/>
+  <input type="text" placeholder="URL" name="url"/>
+  <input type="submit" value="Queue!"/>
+</form>
+<hr>
+<% @songs.each do |song| %>
+  <%= song.title %> | <a href="<%= song.url %>"><%= song.url %></a><br>
+<% end %>
