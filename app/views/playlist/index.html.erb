@@ -7,5 +7,5 @@
 </form>
 <hr>
 <% @songs.each do |song| %>
-  <%= song.title %> | <a href="<%= song.url %>"><%= song.url %></a><br>
+  <a href="<%= song.id %>"><%= song.title %></a> | <a href="<%= song.url %>"><%= song.url %></a><br>
 <% end %>
